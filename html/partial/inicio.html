@@ -1,4 +1,8 @@
 <style type="text/css">
+
+	body{
+		background: transparent;
+	}
 	
 	.imgCover{
 		background: url('img/baby-cloth-clothing-color-41165.jpeg') no-repeat center center;
@@ -16,10 +20,10 @@
 	.tituloJumboTron{
 		margin-bottom: 50px;
 		font-weight: bold;
+		-webkit-animation: 1s titleAppearFromUp 1;
 	}
 
 	.section1{
-
 		padding: 70px 8% 0px 8%;
 	}
 
@@ -28,11 +32,24 @@
 	}
 
 	.tituloSection1{
-
+		
+		
 		text-align: center;
 		font-weight: bolder;
 		padding: 5px;
 	}
+
+	@-webkit-keyframes titleAppearFromUp{
+		
+		0%{
+			margin-top: -30px;
+    		margin-bottom: 100px;
+			opacity: 0;
+		}
+
+	}
+
+
 
 	.parrafoSection1{
 		text-align: justify;
@@ -55,8 +72,65 @@
 		width: 100px;
 	}
 
-	.womanWithCellPhone{
-		width: 100%;
+	.parallax-window {
+		height: 500px;
+	}
+
+	.descripcionJumboTron{
+
+		-webkit-animation: 2s appear 1;
+
+	}
+
+	@-webkit-keyframes appear{
+
+		0%{
+			
+			opacity: 0;
+
+		}
+
+	}
+
+	.tituloSeccionParallax{
+		
+		color: white;
+		font-weight: bolder;
+		text-align: center;
+		padding-top: 130px;
+		padding-bottom: 50px;
+
+	}
+
+
+
+	.subtituloSeccionParallax{
+		
+		color: white;
+		text-align: center;
+		margin: 0px 10%;
+
+	}
+
+	.cajaBotonSeccionParallax{
+		
+		text-align: center;
+		margin: 40px 0px;
+
+	}
+
+	.botonSeccionParallax{
+	    color: #a1dca7;
+	    background-color: rgba(255, 255, 255, 0);
+	    font-size: 2rem;
+	    border-color: #4cae4c;
+	    padding: 10px 20px;
+	    border-radius: 4px;	    
+		transition: 1s ease;
+	}
+
+	.botonSeccionParallax:hover{
+		transition: 1s ease;
 	}
 
 
@@ -67,7 +141,7 @@
 		<h1 class="tituloJumboTron">
 			DIGITALIZA TUS VENTAS
 		</h1>
-		<h4>
+		<h4 class="descripcionJumboTron">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. 
 		</h4>
@@ -124,21 +198,26 @@
 		</div>
 	</div>
 </div>	
-<div class="col-sm-12 section1">
-	<div class="col-sm-6">
-		<div class="subTituloSection1">
-			Lorem ipsum dolor
+<div class="col-sm-12">
+	<div class="row">
+		<div class="parallax-window">
+			<div class="tituloSeccionParallax">
+				<h1>
+					Lorem ipsum dolor sit amet
+				</h1>
+			</div>
+			<div class="subtituloSeccionParallax">
+				<h4>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat sed assumenda, dolore obcaecati voluptatibus! 
+				</h4>
+			</div>	
+			<div class="cajaBotonSeccionParallax">
+				<button class="btn btn-success botonSeccionParallax">
+					Contáctanos
+				</button>
+			</div>
+			
 		</div>
-		<div class="parrafoSection1">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiumdod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. 
-		</div>
-	</div>
-	<div class="col-sm-6" id="contenedorParallax">
-		<div data-depth="0.40">
-			<img class="womanWithCellPhone" src="img/pexels-photo-248021.jpeg">
-		</div>
-	</div>
+	</div>	
+	
 </div>
