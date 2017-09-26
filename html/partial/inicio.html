@@ -11,9 +11,36 @@
 		width: 100%;
 	}
 
+	.sectionPartners{
+		background: #f9f9fa;
+		padding-bottom: 20px;
+		padding-top: 20px;
+
+	}
+
+	.sectionPartners img{
+		
+		filter: grayscale(100%);
+		transition: 0.5s linear;
+		height: 100px;
+		width: 100px;
+
+	}
+
+	.sectionPartners img:hover{
+		filter: grayscale(0%);
+	}
+
+	.sectionPartners>div:nth-child(1){
+		
+		text-align: center;
+		margin-bottom: 20px;
+
+	}
+
 	.cajaJumboTron{
 
-		margin-top: 300px;
+		padding-top: 300px;
 		text-align: center;
 	}
 
@@ -219,5 +246,17 @@
 			
 		</div>
 	</div>	
-	
 </div>
+<section class="col-sm-12 sectionPartners">
+	<div>
+		<h3>Nuestros socios</h3>
+	</div>	
+	<div class="customer-logos slider">
+      <div class="slide"><img src="img/question.png"></div>
+      <div class="slide"><img src="img/question.png"></div>
+      <div class="slide"><img src="img/question.png"></div>
+      <div class="slide"><img src="img/question.png"></div>
+      <div class="slide"><img src="img/question.png"></div>
+      <div class="slide"><img src="img/question.png"></div>      
+   </div>
+</section>

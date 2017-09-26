@@ -4590,12 +4590,10 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 
 .navbar-saeg {
-  transition: 0.8s;
-  background-color: rgba(248, 248, 248, 0);
-  border-color: rgba(231, 231, 231, 0);
-  height: 180px;
-  padding: 70px 15%;
-  font-size: 1.5rem;
+    background-color: rgb(255, 255, 255);
+    border-color: rgba(231, 231, 231, 0);
+    padding: 5px 15%;
+    font-size: 1.5rem;
 }
 .navbar-saeg .navbar-brand {
   color: #1e2122;
@@ -4611,34 +4609,15 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-saeg .navbar-nav > li > a {
   color: #1e2122;
   margin: 0px 10px;
-  transition: border-bottom 0.3s;
   text-decoration: none;  
 
 }
 .navbar-saeg .navbar-nav > li > a:hover,
 .navbar-saeg .navbar-nav > li > a:focus {
-  color: #333;
-  background-color: transparent; 
+      color: #17503b;
+    background-color: rgba(243, 238, 238, 0.55);
+    border-radius: 10px;
 }
-
-.navbar-saeg .navbar-nav > li > a::after {
-  content: '';
-  position: absolute;
-  top:100%;
-  left: 0;
-  right: 0;
-  background-color: #333;
-  height: 1px; 
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.navbar-saeg .navbar-nav > li > a:hover::after {
-
-  opacity: 1;
-
-}
-
 
 
 .navbar-saeg .navbar-nav > .active > a,
@@ -4665,7 +4644,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-saeg .navbar-collapse,
 .navbar-saeg .navbar-form {
-  border-color: #e7e7e7;
+  border-color: transparent;
 }
 .navbar-saeg .navbar-nav > .open > a,
 .navbar-saeg .navbar-nav > .open > a:hover,
@@ -4674,6 +4653,13 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: #e7e7e7;
 }
 @media (max-width: 767px) {
+
+  .navbar-saeg {
+    
+    padding: 5px 0px;
+  }
+
+
   .navbar-saeg .navbar-nav .open .dropdown-menu > li > a {
     color: #1e2122;
   }

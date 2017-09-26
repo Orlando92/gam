@@ -21,8 +21,19 @@
 	    <!-- cryptojslib -->
 	    <script src="lib/cryptojslib/aes.js"></script>
 
+	    <!--slick-->
+	    <script src="lib/slick/slick.min.js"></script>
+	    <link rel="stylesheet" type="text/css" href="lib/slick/slick.css">	
+	    <link rel="stylesheet" type="text/css" href="lib/slick/infinite-slider.css">	
+
 	    <!--moment-->
 		<script src="lib/moment/moment.js"></script>
+
+		<!--gumshoe-->
+		<script src="lib/gumshoe/gumshoe.min.js"></script>
+
+		<!--smooth-scroll-->
+		<script src="lib/smooth-scroll/smooth-scroll.min.js"></script>
 
 		<!--scroll-parallax-->
 		<script src="lib/scroll-parallax/parallax.min.js"></script>
@@ -119,5 +130,9 @@
 			</div>
 		</div>	
 	</body>
+
+	<script>
+		var scroll = new SmoothScroll('a[href*="#"]');
+	</script>
 
 </html>
